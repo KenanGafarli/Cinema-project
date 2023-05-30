@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <div class="login_container">
+        <h2>LOGIN</h2>
+        <form onsubmit="logSubmit(event)">
+            <div class="input_container">
+                <label for="">Email</label>
+                <input class="log_email" type="email" placeholder="sitiago@gmail.com">
+            </div>
+            <div class="input_container">
+                <label for="">Password</label>
+                <input class="log_psw" type="password" placeholder=". . . . . . .">
+            </div>
+           <p class="log_err"></p>
+            <a href="#">Forgot password</a>
+            <div class="entrance_buttons login_buttons">
+                <button class="entrance_login">Login</button>
+            </div>
+        </form>
+        <button class="entrance_sign">Go Register</button>
+    </div>
+
+    <!--! JS LINKS -->
+    <script src="../data.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

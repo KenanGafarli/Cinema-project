@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="login_container">
+        <h2>SIGN UP</h2>
+       
+        <form onsubmit="redSubmit(event)">  <!-- mutleq event olmalidi -->
+            <div class="input_container">
+                <label for="">Name</label>
+                <input required type="text" class="reg_name"   placeholder="sitiago">
+            </div>
+            <div class="input_container">
+                <label for="">Email</label>
+                <input required class="reg_email" type="email" placeholder="sitiago@gmail.com">
+            </div>
+            <div class="input_container">
+                <label for="">Password</label>
+                <input required class="reg_psw type="password" placeholder=". . . . . . .">
+            </div>
+            <div class="input_container">
+                <label for="">Re-type Password</label>
+                <input required class="reg_type_psw type="password" placeholder=". . . . . . .">
+            </div>
+            <p class="reg_err"></p>
+            <a href="#">Forgot password</a>
+            <div class="entrance_buttons login_buttons">
+                <button class="entrance_login">Sign up</button>
+            </div>
+        </form>
+        <button class="entrance_sign">Go Login</button>
+    </div>
+
+    <script src="../data.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
